@@ -1,0 +1,36 @@
+:root {
+    --black: #212121;
+    --white: #F6F6F9;
+    --light: #11A5C6;
+    --base: #0B88A4;
+    --dark: #076377;
+}
+
+.jumbotron {
+    background-color: var(--base);
+    color: var(--white);
+    border-radius: 14px;
+    margin-top: 30px; 
+    margin-bottom: 30px;
+}
+
+.top {
+    background-color: var(--dark);
+    color: var(--white);
+}
+
+.card {
+    border-radius: 14px;
+}
+
+.card-subtitle {
+    color: var(--light);
+}
+
+.list-group-item {
+    border-radius: 4px;
+}
+
+.badge {
+    background-color: var(--base);
+}
