@@ -4,8 +4,7 @@ const Employee = require('./lib/Employee');
 const Manager = require('./lib/Manager');
 const Engineer = require('./lib/Engineer');
 const Intern = require('./lib/Intern');
-const generateHTML = require('./src/generateHTML')
-const finishTeam = require('./src/generateHTML')
+const {generateHTML, finishTeam} = require('./src/generateHTML')
 let reference = {html:""};
 
 function promptUser() {
@@ -39,18 +38,14 @@ function promptUser() {
         },
     ])
     .then((response) => {
-      console.log(response);
-      console.log(reference);
       const manager = new Manager(response.name, response.id, response.email, response.officeNumber)
       var html = generateHTML(response, manager.getRole(), reference);
-      console.log(manager.getRole());
       console.log(html);
       if (response.menu === "Add Engineer") {
         enterEngineer(reference);
       } else if (response.menu === "Add Intern") {
         enterIntern(reference);
       } else if (response.menu === "Finish Team") {
-        console.log(response);
         fs.writeFile('./dist/TeamRoster.html', finishTeam(reference), (err) => {
         err ? console.error(err) : console.log("Successfully created Team Roster")
         })

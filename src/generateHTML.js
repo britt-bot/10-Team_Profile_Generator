@@ -5,6 +5,7 @@ const Intern = require('../lib/Intern');
 
 function generateHTML(response, role, reference) {
     console.log("Adding employee selected now...");
+    console.log(1, reference);
     if(role == "Manager") {
         reference.html = `<div class="col col-sm-3">
                  <div class="card">
@@ -61,6 +62,7 @@ function generateHTML(response, role, reference) {
                 </div>
             </div>`
     }
+    console.log(2, reference);
     return reference.html;
 };
 
@@ -98,5 +100,4 @@ function finishTeam(reference) {
 }
 
 
-module.exports = generateHTML;
-module.exports = finishTeam;
+module.exports = {generateHTML, finishTeam};
