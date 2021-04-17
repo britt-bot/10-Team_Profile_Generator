@@ -40,9 +40,11 @@ function promptUser() {
     ])
     .then((response) => {
       console.log(response);
+      console.log(reference);
       const manager = new Manager(response.name, response.id, response.email, response.officeNumber)
       var html = generateHTML(response, manager.getRole(), reference);
       console.log(manager.getRole());
+      console.log(html);
       if (response.menu === "Add Engineer") {
         enterEngineer(reference);
       } else if (response.menu === "Add Intern") {
