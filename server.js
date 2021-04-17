@@ -1,10 +1,12 @@
-const inquirer = require("inquirer");
-const fs = require("fs");
-const finishTeam = require("./src/generateHTML")
+const inquirer = require('inquirer');
+const fs = require('fs');
 const Employee = require('./lib/Employee');
 const Manager = require('./lib/Manager');
 const Engineer = require('./lib/Engineer');
 const Intern = require('./lib/Intern');
+const generateHTML = require('./src/generateHTML')
+const finishTeam = require('./src/generateHTML')
+let reference = {html:""};
 
 function promptUser() {
   return inquirer
@@ -39,25 +41,24 @@ function promptUser() {
     .then((response) => {
       console.log(response);
       const manager = new Manager(response.name, response.id, response.email, response.officeNumber)
+      var html = generateHTML(response, manager.getRole(), reference);
+      console.log(manager.getRole());
       if (response.menu === "Add Engineer") {
-        enterEngineer();
+        enterEngineer(reference);
       } else if (response.menu === "Add Intern") {
-        enterIntern();
+        enterIntern(reference);
       } else if (response.menu === "Finish Team") {
-        const generateHTML = finishTeam(manager);
         console.log(response);
-        console.log(manager.getRole());
-        console.log(generateHTML(response));
-        fs.writeFile('./dist/TeamRoster.html', generateHTML(manager, manager.getRole()), (err) => {
+        fs.writeFile('./dist/TeamRoster.html', finishTeam(reference), (err) => {
         err ? console.error(err) : console.log("Successfully created Team Roster")
         })
       } else {
         return err;
       }
-    });
+    })
 }
 
-function enterEngineer() {
+function enterEngineer(reference) {
   return inquirer
     .prompt([
       {
@@ -89,17 +90,16 @@ function enterEngineer() {
     ])
     .then((response) => {
       console.log(response);
-      const engineer = new Engineer(response.name, response.id, response.email, response.gitHub)
+      const engineer = new Engineer(response.name, response.id, response.email, response.github)
+      generateHTML(response, engineer.getRole(), reference);
+      console.log(engineer.getRole());
       if (response.menu === "Add Engineer") {
-        enterEngineer();
+        enterEngineer(reference);
       } else if (response.menu === "Add Intern") {
-        enterIntern();
+        enterIntern(reference);
       } else if (response.menu === "Finish Team") {
-        const generateHTML = finishTeam(engineer);
         console.log(response);
-        console.log(engineer.getRole());
-        console.log(generateHTML(response));
-        fs.writeFile('./dist/TeamRoster.html', generateHTML(engineer, engineer.getRole()), (err) => {
+        fs.writeFile('./dist/TeamRoster.html', finishTeam(reference), (err) => {
         err ? console.error(err) : console.log("Successfully created Team Roster")
         })
       } else {
@@ -140,17 +140,16 @@ function enterIntern() {
     ])
     .then((response) => {
       console.log(response);
-      const intern = new Intern(response.name, response.id, response.mail, response.school)
+      const intern = new Intern(response.name, response.id, response.email, response.school)
+      generateHTML(response, intern.getRole(), reference);
+      console.log(intern.getRole());
       if (response.menu === "Add Engineer") {
-        enterEngineer();
+        enterEngineer(reference);
       } else if (response.menu === "Add Intern") {
-        enterIntern();
+        enterIntern(reference);
       } else if (response.menu === "Finish Team") {
-        const generateHTML = finishTeam(intern);
         console.log(response);
-        console.log(intern.getRole());
-        console.log(generateHTML(response));
-        fs.writeFile('./dist/TeamRoster.html', generateHTML(intern, intern.getRole()), (err) => {
+        fs.writeFile('./dist/TeamRoster.html', finishTeam(reference), (err) => {
         err ? console.error(err) : console.log("Successfully created Team Roster")
         })
       } else {
