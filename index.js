@@ -38,7 +38,8 @@ function promptUser() {
         },
     ])
     .then((response) => {
-      const manager = new Manager(response.name, response.id, response.email, response.officeNumber)
+      console.log(response);
+      const manager = new Manager(response.name, response.id, response.email, response.officeNumber);
       var html = generateHTML(response, manager.getRole(), reference);
       console.log(html);
       if (response.menu === "Add Engineer") {
@@ -55,13 +56,13 @@ function promptUser() {
     })
 }
 
-function enterEngineer(reference) {
+function enterEngineer() {
   return inquirer
     .prompt([
       {
         type: "input",
         message: "Please enter Engineer Name.",
-        name: "Name",
+        name: "name",
       },
       {
         type: "input",
@@ -87,9 +88,9 @@ function enterEngineer(reference) {
     ])
     .then((response) => {
       console.log(response);
-      const engineer = new Engineer(response.name, response.id, response.email, response.github)
-      generateHTML(response, engineer.getRole(), reference);
-      console.log(engineer.getRole());
+      const engineer = new Engineer(response.name, response.id, response.email, response.github);
+      var html = generateHTML(response, engineer.getRole(), reference);
+      console.log(html);
       if (response.menu === "Add Engineer") {
         enterEngineer(reference);
       } else if (response.menu === "Add Intern") {
@@ -138,8 +139,8 @@ function enterIntern() {
     .then((response) => {
       console.log(response);
       const intern = new Intern(response.name, response.id, response.email, response.school)
-      generateHTML(response, intern.getRole(), reference);
-      console.log(intern.getRole());
+      var html = generateHTML(response, intern.getRole(), reference);
+      console.log(html);
       if (response.menu === "Add Engineer") {
         enterEngineer(reference);
       } else if (response.menu === "Add Intern") {
