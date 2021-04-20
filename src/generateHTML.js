@@ -19,7 +19,7 @@ function generateHTML(response, role, reference) {
                     <div class="card-body bottom">
                         <h4 class="card-title"><span class="badge badge-secondary">Contact Info</span></h4>
                             <ul class="list-group">
-                                <li class="list-group-item">Email: ${response.email}</li>
+                                <li class="list-group-item">Email: <a href="mailto:${response.email}">${response.email}</a></li>
                             </ul>
                     </div>
                 </div>
@@ -37,8 +37,8 @@ function generateHTML(response, role, reference) {
                     <div class="card-body bottom">
                         <h4 class="card-title"><span class="badge badge-secondary">Contact Info</span></h4>
                             <ul class="list-group">
-                                <li class="list-group-item">Email: ${response.email}</li>
-                                <li class="list-group-item">GitHub: ${response.github}</li>
+                                <li class="list-group-item">Email: <a href="mailto:${response.email}">${response.email}</a></li>                                
+                                <li class="list-group-item">GitHub: <a href="https://github.com/${response.github}">${response.github}</a></li>
                             </ul>
                     </div>
                 </div>
@@ -56,7 +56,7 @@ function generateHTML(response, role, reference) {
                     <div class="card-body bottom">
                         <h4 class="card-title"><span class="badge badge-secondary">Contact Info</span></h4>
                             <ul class="list-group">
-                                <li class="list-group-item">Email: ${response.email}</li>
+                                <li class="list-group-item">Email: <a href="mailto:${response.email}">${response.email}</a></li>                                
                                 <li class="list-group-item">School: ${response.school}</li>
                             </ul>
                     </div>
