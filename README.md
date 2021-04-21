@@ -27,10 +27,20 @@ Open the desired web browser and go to the page url for either the Repo or the D
 
 A README is a document used to explain an application. Including what the app is for, how to use the app, how to install it, how to report issues, and how to make contributions.
 
-![Screenshot](https://user-images.githubusercontent.com/77466708/114288472-dd334100-9a35-11eb-9592-b081720022dd.png)
+![generateHTML](https://user-images.githubusercontent.com/77466708/115482178-b46c3200-a213-11eb-9c9d-5ca3d8d38f84.png)
 
-![Screenshot1](https://user-images.githubusercontent.com/77466708/114288474-dd334100-9a35-11eb-9240-43ce99008690.png)
+![index](https://user-images.githubusercontent.com/77466708/115482179-b504c880-a213-11eb-9b4d-ca6b59236f95.png)
 
+![engineer](https://user-images.githubusercontent.com/77466708/115482180-b504c880-a213-11eb-853a-98b8b6daff03.png)
+
+![engineer1](https://user-images.githubusercontent.com/77466708/115482181-b504c880-a213-11eb-9621-dbb295a89a07.png)
+
+![TeamRosterHTML](https://user-images.githubusercontent.com/77466708/115482182-b59d5f00-a213-11eb-98ea-bac98189dfce.png)
+
+![TeamRoster](https://user-images.githubusercontent.com/77466708/115482183-b59d5f00-a213-11eb-90fb-1f150e57e180.png)
+
+
+[Walkthrough_Video](https://drive.google.com/file/d/1a6XhG4uplXMxuT0Yn8PvJqfx1ZW4hXQr/view?usp=sharing)
 
 ## Credits
 
