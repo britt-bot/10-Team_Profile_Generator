@@ -18,9 +18,9 @@ This table of contents is to make it easy for users to find what they need.
 
 Open the desired web browser and go to the page url for either the Repo or the Deployed project.
 
-[Homework 10 - README Generator Repo](https://github.com/britt-bot/10-Team_Profile_Generator)
+[Homework 10 - Team Profile Generator Repo](https://github.com/britt-bot/10-Team_Profile_Generator)
 
-[Homework 10 - README Generator Deployed](https://britt-bot.github.io/10-Team_Profile_Generator/)
+[Homework 10 - Team Profile Generator Deployed](https://britt-bot.github.io/10-Team_Profile_Generator/)
 
 
 ## Usage 
