@@ -22,7 +22,7 @@ Open the desired web browser and go to the page url for either the Repo or the D
 
 [Homework 10 - Team Profile Generator Deployed](https://britt-bot.github.io/10-Team_Profile_Generator/)
 
-[Walkthrough_Video](https://drive.google.com/file/d/1a6XhG4uplXMxuT0Yn8PvJqfx1ZW4hXQr/view?usp=sharing)
+[Walkthrough Video](https://drive.google.com/file/d/1a6XhG4uplXMxuT0Yn8PvJqfx1ZW4hXQr/view?usp=sharing)
 
 
 ## Usage 
