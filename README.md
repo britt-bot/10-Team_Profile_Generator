@@ -22,10 +22,21 @@ Open the desired web browser and go to the page url for either the Repo or the D
 
 [Homework 10 - Team Profile Generator Deployed](https://britt-bot.github.io/10-Team_Profile_Generator/)
 
+[Walkthrough_Video](https://drive.google.com/file/d/1a6XhG4uplXMxuT0Yn8PvJqfx1ZW4hXQr/view?usp=sharing)
+
 
 ## Usage 
 
-A README is a document used to explain an application. Including what the app is for, how to use the app, how to install it, how to report issues, and how to make contributions.
+A Node.js command-line application that takes in information about employees on a software engineering team, then generates an HTML webpage that displays summaries for each person.
+
+
+## Credits
+
+Third Party Assets:
+
+[Inquirer](https://www.npmjs.com/package/inquirer)
+
+[Jest](https://www.npmjs.com/package/jest)
 
 ![generateHTML](https://user-images.githubusercontent.com/77466708/115482178-b46c3200-a213-11eb-9c9d-5ca3d8d38f84.png)
 
@@ -38,17 +49,6 @@ A README is a document used to explain an application. Including what the app is
 ![TeamRosterHTML](https://user-images.githubusercontent.com/77466708/115482182-b59d5f00-a213-11eb-98ea-bac98189dfce.png)
 
 ![TeamRoster](https://user-images.githubusercontent.com/77466708/115482183-b59d5f00-a213-11eb-90fb-1f150e57e180.png)
-
-
-[Walkthrough_Video](https://drive.google.com/file/d/1a6XhG4uplXMxuT0Yn8PvJqfx1ZW4hXQr/view?usp=sharing)
-
-## Credits
-
-Third Party Assets:
-
-[Inquirer](https://www.npmjs.com/package/inquirer)
-
-[Jest](https://www.npmjs.com/package/jest)
 
 
 ## License
