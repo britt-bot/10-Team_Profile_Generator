@@ -1,3 +1,4 @@
+![MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 # 10-Team_Profile_Generator
 ## Description 
 
@@ -18,9 +19,9 @@ This table of contents is to make it easy for users to find what they need.
 
 Open the desired web browser and go to the page url for either the Repo or the Deployed project.
 
-[Homework 10 - Team Profile Generator Repo](https://github.com/britt-bot/10-Team_Profile_Generator)
+[Homework 10 - Team Profile Generator Github Repo](https://github.com/britt-bot/10-Team_Profile_Generator)
 
-[Homework 10 - Team Profile Generator Deployed](https://britt-bot.github.io/10-Team_Profile_Generator/)
+[Homework 10 - Team Profile Generator Github Deploy](https://britt-bot.github.io/10-Team_Profile_Generator/)
 
 [Walkthrough Video](https://drive.google.com/file/d/1a6XhG4uplXMxuT0Yn8PvJqfx1ZW4hXQr/view?usp=sharing)
 
@@ -28,15 +29,6 @@ Open the desired web browser and go to the page url for either the Repo or the D
 ## Usage 
 
 A Node.js command-line application that takes in information about employees on a software engineering team, then generates an HTML webpage that displays summaries for each person.
-
-
-## Credits
-
-Third Party Assets:
-
-[Inquirer](https://www.npmjs.com/package/inquirer)
-
-[Jest](https://www.npmjs.com/package/jest)
 
 ![generateHTML](https://user-images.githubusercontent.com/77466708/115482178-b46c3200-a213-11eb-9c9d-5ca3d8d38f84.png)
 
@@ -49,6 +41,15 @@ Third Party Assets:
 ![TeamRosterHTML](https://user-images.githubusercontent.com/77466708/115482182-b59d5f00-a213-11eb-98ea-bac98189dfce.png)
 
 ![TeamRoster](https://user-images.githubusercontent.com/77466708/115482183-b59d5f00-a213-11eb-90fb-1f150e57e180.png)
+
+
+## Credits
+
+Third Party Assets:
+
+[Inquirer](https://www.npmjs.com/package/inquirer)
+
+[Jest](https://www.npmjs.com/package/jest)
 
 
 ## License
