@@ -1,5 +1,5 @@
 ![MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
-# 10-Team_Profile_Generator
+# Team_Profile_Generator
 ## Description 
 
 This application generates a "Team Roster.html" file using user input from a command-line application, allowing users to enter their team members and then generate the HTML file showing all of the information entered by the user.
@@ -19,9 +19,9 @@ This table of contents is to make it easy for users to find what they need.
 
 Open the desired web browser and go to the page url for either the Repo or the Deployed project.
 
-[Team Profile Generator Github Repo](https://github.com/britt-bot/10-Team_Profile_Generator)
+[Team Profile Generator Repo](https://github.com/britt-bot/10-Team_Profile_Generator)
 
-[Team Profile Generator Github Deploy](https://britt-bot.github.io/10-Team_Profile_Generator/)
+[Team Profile Generator Deploy](https://britt-bot.github.io/10-Team_Profile_Generator/)
 
 [Walkthrough Video](https://drive.google.com/file/d/1a6XhG4uplXMxuT0Yn8PvJqfx1ZW4hXQr/view?usp=sharing)
 
