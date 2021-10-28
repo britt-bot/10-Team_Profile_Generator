@@ -19,9 +19,9 @@ This table of contents is to make it easy for users to find what they need.
 
 Open the desired web browser and go to the page url for either the Repo or the Deployed project.
 
-[Team Profile Generator Repo](https://github.com/britt-bot/10-Team_Profile_Generator)
+[Team Profile Generator Repo](https://github.com/britt-bot/Team_Profile_Generator)
 
-[Team Profile Generator Deploy](https://britt-bot.github.io/10-Team_Profile_Generator/)
+[Team Profile Generator Deploy](https://britt-bot.github.io/Team_Profile_Generator)
 
 [Walkthrough Video](https://drive.google.com/file/d/1a6XhG4uplXMxuT0Yn8PvJqfx1ZW4hXQr/view?usp=sharing)
 
